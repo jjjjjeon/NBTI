@@ -60,9 +60,9 @@ public class ApprovalLineService {
 		}
 		
 		
-		System.out.println("문서 상태: " + approvalYN);
-		System.out.println("총 순서: " + total_seq);
-		System.out.println("현재 순서: " + order);
+//		System.out.println("문서 상태: " + approvalYN);
+//		System.out.println("총 순서: " + total_seq);
+//		System.out.println("현재 순서: " + order);
 		
 		
 		// 문서 상태가 승인일 때, 
@@ -133,7 +133,7 @@ public class ApprovalLineService {
 				}else {
 					updateOrder = (order+(int)1);
 				}
-				System.out.println("order 값증가 및 업데이트 필요" +order +":"+ (updateOrder));
+//				System.out.println("order 값증가 및 업데이트 필요" +order +":"+ (updateOrder));
 				map.put("updateOrder",updateOrder);
 				aldao.updateNextApproval(map);
 			}
